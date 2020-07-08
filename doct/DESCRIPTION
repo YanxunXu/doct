@@ -1,0 +1,15 @@
+Package: doct
+Type: Package
+Title: Decisions Optimized in Continuous Time
+Version: 1.0
+Date: 2020-07-05
+Author: William Hua <whua4@jhu.edu>, Yanxun Xu <yanxun.xu@jhu.edu>
+Maintainer: William Hua <whua4@jhu.edu>
+Description: Our package implements methods from Personalized Dynamic Treatment Regimes in Continuous Time: A Bayesian Joint Model for Optimizing Clinical Decisions with Timing. This paper builds a generative model for sequence of medical interventions---which are discrete events in continuous time---with a marked temporal point process (MTPP) where the mark is the assigned treatment or dosage. This clinical action model is then embedded into a Bayesian joint framework where the other components model clinical observations including medical longitudinal measurements and patient survival. Moreover, we propose a policy gradient method to learn the personalized optimal clinical decision that maximizes patient survival by interacting the MTPP with the model on clinical observations while accounting for uncertainties in clinical observations.
+License: CC0 
+Imports: Rcpp (>= 1.0.4.6), MASS, pracma, mvtnorm, LaplacesDemon, RcppEigen, RcppNumerical, RcppArmadillo, stats, GoFKernel, survival
+LinkingTo: Rcpp, RcppArmadillo, RcppEigen, RcppNumerical
+RoxygenNote: 7.1.0
+Encoding: UTF-8
+Depends: 
+    R (>= 2.10)
