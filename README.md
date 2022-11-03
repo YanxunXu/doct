@@ -9,6 +9,8 @@ dep_packages <- c("Rcpp","RcppArmadillo", "RcppEigen", "RcppNumerical", "MASS", 
 new.packages <- dep_packages[!(dep_packages %in% installed.packages()[,"Package"])]
 if(length(new.packages)) install.packages(new.packages)
 
+"simulation.Rdata" is a simulated dataset mimicking the real dataset. The detailed description on how to generate the simulated dataset can be found in the book chapter "Modeling and Optimizing Dynamic Treatment Regimens in Continuous Time. "
+
 
 
 
